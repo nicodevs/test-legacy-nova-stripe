@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97c7e0ff5b382b2cfa433108d641f490",
+    "content-hash": "3b7c0ff71ad426205bec373d9b001cd3",
     "packages": [
         {
             "name": "brick/math",
@@ -3984,6 +3984,65 @@
             "time": "2024-06-03T08:00:43+00:00"
         },
         {
+            "name": "stripe/stripe-php",
+            "version": "v16.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "4aa86099f888db9368f5f778f29feb14e6294dfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/4aa86099f888db9368f5f778f29feb14e6294dfb",
+                "reference": "4aa86099f888db9368f5f778f29feb14e6294dfb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.5.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v16.4.0"
+            },
+            "time": "2024-12-18T23:42:15+00:00"
+        },
+        {
             "name": "symfony/clock",
             "version": "v7.2.0",
             "source": {
@@ -6294,6 +6353,71 @@
                 }
             ],
             "time": "2024-11-08T15:48:14+00:00"
+        },
+        {
+            "name": "tightenco/nova-stripe",
+            "version": "v2.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tighten/nova-stripe.git",
+                "reference": "285be66897368f253088f871a304f0755625aa85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tighten/nova-stripe/zipball/285be66897368f253088f871a304f0755625aa85",
+                "reference": "285be66897368f253088f871a304f0755625aa85",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0|^8.1",
+                "stripe/stripe-php": ">=5.0"
+            },
+            "require-dev": {
+                "laravel/nova": "^4.0",
+                "orchestra/testbench": ">=3.6.x-dev",
+                "phpunit/phpunit": "9.5.*",
+                "tightenco/duster": "^0.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tighten\\NovaStripe\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tighten\\NovaStripe\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samantha Geitz",
+                    "email": "samantha@tighten.co"
+                },
+                {
+                    "name": "Alison Kirk",
+                    "email": "alison.kirk@tighten.co"
+                }
+            ],
+            "description": "A tool to create a quick Stripe dashboard in your Laravel Nova admin panels",
+            "keywords": [
+                "laravel",
+                "nova",
+                "stripe",
+                "tighten",
+                "tightenco"
+            ],
+            "support": {
+                "issues": "https://github.com/tighten/nova-stripe/issues",
+                "source": "https://github.com/tighten/nova-stripe/tree/v2.0.7"
+            },
+            "time": "2022-10-31T12:15:21+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
